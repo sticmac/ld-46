@@ -20,6 +20,11 @@ public class Timer : MonoBehaviour
 
     public float TimeRemaining => _timeRemaining;
 
+    public void ResetAndRun() {
+        Reset();
+        Run();
+    }
+
     public void Reset() {
         _timeRemaining = _initialTime;
         DisplayTime(_timeRemaining);
@@ -31,11 +36,6 @@ public class Timer : MonoBehaviour
 
     public void Pause() {
         _running = false;
-    }
-
-    private void Start() {
-        Reset();
-        Run();
     }
 
     void Update() {

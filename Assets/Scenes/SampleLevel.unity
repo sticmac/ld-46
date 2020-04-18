@@ -29561,26 +29561,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 578463163}
-    - target: {fileID: 6208332394268026126, guid: fb3aae44ad62d74d6bd0d2f5cc36031c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
-    - target: {fileID: 6208332394268026126, guid: fb3aae44ad62d74d6bd0d2f5cc36031c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6208332394268026126, guid: fb3aae44ad62d74d6bd0d2f5cc36031c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6208332394268026126, guid: fb3aae44ad62d74d6bd0d2f5cc36031c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6377156759529760586, guid: fb3aae44ad62d74d6bd0d2f5cc36031c,
         type: 3}
       propertyPath: m_IsActive
