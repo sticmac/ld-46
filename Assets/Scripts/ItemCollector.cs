@@ -12,6 +12,7 @@ public class ItemCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag(_itemTag)) {
+            Debug.Log("Miaou");
             _itemHolder.AddItem(other.GetComponent<Item>());
         }
     }

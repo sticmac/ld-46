@@ -16,7 +16,7 @@ public class ItemHolder : MonoBehaviour
     private Stack<Item> _itemList = new Stack<Item>();
 
     public void AddItem(Item item) {
-        if (CanAddItem()) {
+        if (CanAddItem() && !_itemList.Contains(item)) {
             Transform itemTf = item.gameObject.transform;
             itemTf.SetParent(_itemHolderTransform); 
             itemTf.localPosition = Vector3.zero + _marginBetweenHeldItems * _itemList.Count * Vector3.up;
