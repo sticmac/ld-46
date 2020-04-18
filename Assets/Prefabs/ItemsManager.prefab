@@ -48,3 +48,4 @@ MonoBehaviour:
       m_Calls: []
   _addTimeWhenUsingItems: 1
   _timer: {fileID: 0}
+  _timeToAdd: 2
