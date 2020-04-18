@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovementsController : MonoBehaviour
 {
     [SerializeField] float _moveSpeed = 5f;
+    [SerializeField] Rigidbody2D _rb2d = null;
 
     private Vector2 _deltaPosition;
 
@@ -14,7 +15,7 @@ public class PlayerMovementsController : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        transform.position += (Vector3)_deltaPosition * Time.deltaTime;
+        _rb2d.position += _deltaPosition * Time.deltaTime;
     }
 
 }
