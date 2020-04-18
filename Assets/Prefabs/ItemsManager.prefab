@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5022f77d620f22f1ba86ccdd2a2f5a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnAllItemsPicked:
+  OnAllItemsUsed:
     m_PersistentCalls:
       m_Calls: []
+  _addTimeWhenUsingItems: 1
+  _timer: {fileID: 0}

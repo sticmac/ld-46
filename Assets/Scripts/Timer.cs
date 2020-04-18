@@ -38,6 +38,10 @@ public class Timer : MonoBehaviour
         _running = false;
     }
 
+    public void Add(float addValue) {
+        _timeRemaining += addValue;
+    }
+
     void Update() {
         if (_running) {
             if (_timeRemaining > 0) {

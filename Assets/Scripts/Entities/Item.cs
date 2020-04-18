@@ -5,6 +5,10 @@ using UnityEngine;
 [ExecuteAlways]
 public class Item : MonoBehaviour
 {
+
+    [SerializeField] float _addedTimePerUsage;
+    public float AddedTimePerUsage => _addedTimePerUsage;
+
     private ItemsManager _m = null;
     private ItemsManager _manager {
         get {
