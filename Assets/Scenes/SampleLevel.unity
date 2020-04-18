@@ -27896,7 +27896,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 1.25
 --- !u!212 &889741045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29376,6 +29376,11 @@ PrefabInstance:
     - target: {fileID: 3648073617953154290, guid: 39abf1ce692840d8e845acbdaabfb0b8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612474215639861085, guid: 39abf1ce692840d8e845acbdaabfb0b8,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7612474215639861085, guid: 39abf1ce692840d8e845acbdaabfb0b8,
