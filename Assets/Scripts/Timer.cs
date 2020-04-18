@@ -42,6 +42,10 @@ public class Timer : MonoBehaviour
         _timeRemaining += addValue;
     }
 
+    private void Start() {
+        ResetAndRun();
+    }
+
     void Update() {
         if (_running) {
             if (_timeRemaining > 0) {
