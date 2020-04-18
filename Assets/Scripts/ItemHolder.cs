@@ -33,5 +33,9 @@ public class ItemHolder : MonoBehaviour
     }
 
     public void Flush() {
+        while (_itemList.Count > 0) {
+            Item item = _itemList.Pop();
+            item.gameObject.SetActive(false);
+        }
     }
 }

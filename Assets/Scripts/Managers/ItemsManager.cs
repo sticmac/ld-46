@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class ItemsManager : MonoBehaviour
 {
-    public UnityEvent OnAllItemsPicked;
+    public UnityEvent OnAllItemsUsed;
 
     private List<Item> _items = new List<Item>(); 
 
@@ -17,7 +17,7 @@ public class ItemsManager : MonoBehaviour
         _items.Remove(item);
 
         if (_items.Count == 0) {
-            OnAllItemsPicked?.Invoke();
+            OnAllItemsUsed?.Invoke();
         }
     }
 }

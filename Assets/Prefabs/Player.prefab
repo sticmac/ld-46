@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7612474215639861085}
   - component: {fileID: 8455675354097595492}
   - component: {fileID: 1455626580712607867}
+  - component: {fileID: 5723984809313729913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -165,6 +166,21 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8e5b7a14-b1f3-4cc0-9ac8-e25f611ff836
     m_ActionName: Player/Move[/Gamepad/leftStick,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5723984809313729913}
+        m_MethodName: Give
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 08e5406b-50bf-4cb2-96e7-75088ee519b5
+    m_ActionName: Player/Give Items[/Gamepad/buttonSouth,/Keyboard/space,/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -198,6 +214,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemTag: Item
   _itemHolder: {fileID: 4372889013253319357}
+--- !u!114 &5723984809313729913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648073617953154288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9874d69adff58f0708923a0919ccc0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemHolder: {fileID: 4372889013253319357}
+  _heartTag: Heart
 --- !u!1 &8464131536656642969
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8464131536656642969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.86, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3648073617953154290}
@@ -243,3 +273,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemHolderTransform: {fileID: 8328516367121555705}
   _marginBetweenHeldItems: 0.1
+  _itemLimitEnabled: 1
+  _itemLimit: 5
