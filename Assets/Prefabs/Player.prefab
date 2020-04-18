@@ -195,4 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acdc9a48d4f4d4b4a7c8e04d82855d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnAllItemsCollected:
+    m_PersistentCalls:
+      m_Calls: []
   _itemTag: Item
+  _maxToCollect: 5
