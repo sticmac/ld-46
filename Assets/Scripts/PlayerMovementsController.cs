@@ -11,7 +11,12 @@ public class PlayerMovementsController : MonoBehaviour
     private Vector2 _deltaPosition;
 
     public void MoveAction(InputAction.CallbackContext context) {
-        _deltaPosition = context.ReadValue<Vector2>() * _moveSpeed;
+        Vector2 input = context.ReadValue<Vector2>();
+        _deltaPosition = input * _moveSpeed;
+        if (input != Vector2.zero) {
+            float angle = Mathf.Atan2(-input.x, input.y) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
     }
 
     private void FixedUpdate() {

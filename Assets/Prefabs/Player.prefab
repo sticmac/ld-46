@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c97cbbe56903cbba83c552cd1dfad8f, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d35ae4c9b7fc671adb8713353b28db51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44bed3fe2d6c81cdd8389af7f5323e13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,21 +166,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8e5b7a14-b1f3-4cc0-9ac8-e25f611ff836
     m_ActionName: Player/Move[/Gamepad/leftStick,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5723984809313729913}
-        m_MethodName: Give
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 08e5406b-50bf-4cb2-96e7-75088ee519b5
-    m_ActionName: Player/Give Items[/Gamepad/buttonSouth,/Keyboard/space,/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -214,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemTag: Item
   _itemHolder: {fileID: 4372889013253319357}
+  _sfx: {fileID: 0}
 --- !u!114 &5723984809313729913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemHolder: {fileID: 4372889013253319357}
   _heartTag: Heart
+  _sfx: {fileID: 0}
 --- !u!1 &8464131536656642969
 GameObject:
   m_ObjectHideFlags: 0
