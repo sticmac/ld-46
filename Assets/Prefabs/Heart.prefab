@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3944796738643025309}
   - component: {fileID: 3944796738643025308}
   - component: {fileID: 6879466427804830522}
+  - component: {fileID: 1305885543252081163}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Heart
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3944796738643025306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.84, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,3 +134,19 @@ PolygonCollider2D:
       - {x: 0.46875, y: 0.03125}
       - {x: 0.46875, y: 0.4375}
       - {x: 0.359375, y: 0.46875}
+--- !u!111 &1305885543252081163
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3944796738643025306}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 70b880f90feb46205b264b231abcc9e9, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 70b880f90feb46205b264b231abcc9e9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
