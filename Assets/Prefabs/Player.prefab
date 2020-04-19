@@ -260,5 +260,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemHolderTransform: {fileID: 8328516367121555705}
   _marginBetweenHeldItems: 0.1
-  _itemLimitEnabled: 1
+  _itemLimitEnabled: 0
   _itemLimit: 5
