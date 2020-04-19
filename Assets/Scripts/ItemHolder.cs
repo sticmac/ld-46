@@ -16,26 +16,26 @@ public class ItemHolder : MonoBehaviour
     private Stack<Item> _itemList = new Stack<Item>();
 
     public void AddItem(Item item) {
-        if (CanAddItem() && !_itemList.Contains(item)) {
-            Transform itemTf = item.gameObject.transform;
-            itemTf.SetParent(_itemHolderTransform); 
-            itemTf.localPosition = Vector3.zero + _marginBetweenHeldItems * _itemList.Count * Vector3.up;
-            _itemList.Push(item);
-        }
+        Transform itemTf = item.gameObject.transform;
+        itemTf.SetParent(_itemHolderTransform); 
+        itemTf.localPosition = Vector3.zero + _marginBetweenHeldItems * _itemList.Count * Vector3.up;
+        _itemList.Push(item);
     }
 
-    private bool CanAddItem() {
+    public bool CanAddItem(Item item) {
         if (!_itemLimitEnabled) {
-            return true;
+            return !_itemList.Contains(item);
         } else {
-            return _itemList.Count < _itemLimit;
+            return _itemList.Count < _itemLimit && !_itemList.Contains(item);
         }
     }
 
-    public void Flush() {
+    public bool Flush() {
+        bool hasFlushedSomething = _itemList.Count > 0;
         while (_itemList.Count > 0) {
             Item item = _itemList.Pop();
             item.gameObject.SetActive(false);
         }
+        return hasFlushedSomething;
     }
 }
