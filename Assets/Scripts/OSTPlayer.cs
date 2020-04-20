@@ -5,6 +5,10 @@ using UnityEngine;
 public class OSTPlayer : MonoBehaviour
 {
     private void Awake() {
-        DontDestroyOnLoad(gameObject);
+        if (FindObjectsOfType(typeof(OSTPlayer)).Length > 1) {
+            Destroy(gameObject);
+        } else {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
